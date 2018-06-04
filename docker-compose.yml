@@ -1,4 +1,4 @@
-version: "3"
+version: "2"
 services:
   smtp:
     build: .
@@ -16,8 +16,4 @@ services:
       CERTIFICATE_PATH:
       MAILNAME:
       SMARTHOST_ADDRESS: dailyinfo-co-uk.outbound1-uk.mailanyone.net
-    restart_policy:
-      condition: on-failure
-      delay: 5s
-      max_attempts: 3
-      window: 120s
+    restart: on-failure
