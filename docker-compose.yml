@@ -15,6 +15,7 @@ services:
       KEY_PATH:
       CERTIFICATE_PATH:
       MAILNAME:
+      SMARTHOST_ADDRESS: dailyinfo-co-uk.outbound1-uk.mailanyone.net
     restart_policy:
       condition: on-failure
       delay: 5s
